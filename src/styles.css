@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css';
+/* html ,  body  { height: 100%;} */
+/* html, body {
+  position: relative;
+  height: 150%;
+  background-color: #e5e9ec;
+}
+body{
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #525f7f;
+text-align: left;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+} */
+html, body {
+  height: 100%; /* Full height */
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling on the body */
+  background-color: #e5e9ec;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #525f7f;
+  text-align: left;
+}

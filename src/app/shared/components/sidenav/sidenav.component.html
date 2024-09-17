@@ -1,0 +1,56 @@
+ <div class="nav-side-menu">
+  <div class="sidebar">
+    <h1 class="brand">
+      <a routerLink="/dashboard">Dashboard</a>
+      <i class="fa-solid fa-rotate-right"></i>
+    </h1>
+  </div>
+  <div class="email">
+    <img src="assets/Imgs/jon.png" alt="User">
+    <div class="text-content">
+      <h1>Jonny Doo</h1>
+      <p>&#64;jonnydoo</p>
+    </div>
+  </div>
+   <div class="menu-list">
+    <ul id="menu-content" class="menu-content collapse show">
+      <li>
+        <a routerLink="/dashboard">
+          <i class="fa-solid fa-house"></i> Overview
+        </a>
+      </li>
+      <li>
+        <a routerLink="/audiance">
+          <i class="fa-solid fa-user"></i> Audience
+        </a>
+      </li>
+      <li (click)="toggleDropdown('service')">
+        <a>
+          <i class="fa-solid fa-dollar-sign"></i> Finances
+          <i id="left" class="fa-solid fa-chevron-left" [ngClass]="{'rotate': isDropdownOpen('service')}"></i>
+        </a>
+      </li>
+      <ul class="sub-menu collapse" [ngClass]="{'show': isDropdownOpen('service')}" id="service">
+        <li><a routerLink="/finances/incomes">Incomes</a></li>
+        <li><a routerLink="/finances/outcomes">Outcomes</a></li>
+      </ul>
+      <li data-toggle="collapse" data-target="#new" class="collapsed">
+        <a href="#" class="real-time-link">
+          <i class="fa-regular fa-clock"></i> Real Time
+          <span class="badge badge-green">12</span>
+        </a>
+      </li>
+      <hr>
+      <li (click)="toggleDropdown('projects')">
+        <a>
+          <i class="fa-solid fa-briefcase"></i> Projects
+          <i id="left" class="fa-solid fa-chevron-left" [ngClass]="{'rotate': isDropdownOpen('projects')}"></i>
+        </a>
+      </li>
+      <ul class="sub-menu collapse" [ngClass]="{'show': isDropdownOpen('projects')}" >
+        <li><a routerLink="/projects/free-ration-nation">Free Ration Nation</a></li>
+        <li><a routerLink="/projects/cats-going-crazy">Cats Going Crazy</a></li>
+      </ul>
+    </ul>
+  </div>
+</div>

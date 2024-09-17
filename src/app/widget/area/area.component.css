@@ -1,0 +1,261 @@
+#real-time li {
+  font-size: 1.1rem;
+  font-weight: 100;
+  border-bottom: 0.1rem solid #e5e9ec;
+  padding: 0.5rem 0;
+}
+#real-time .badge.ok {
+  background-color: #1bc98e;
+}
+#real-time .badge span, #real-time .label {
+  color: #FFF;
+}
+
+
+.list-unstyled {
+  padding: 0.6rem;
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#real-time .badge, #real-time .label {
+  margin-top: 0.25rem;
+}
+
+#real-time .badge, #real-time .label {
+  margin-top: 0.25rem;
+}
+
+#real-time .badge span, #real-time .label {
+  color: #FFF;
+}
+.card * {
+  color: #252830;
+}
+.pull-right {
+  float: right !important;
+}
+.label-warning {
+  background-color: #f0ad4e;
+}
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+.progress-bar-success  {
+  background-color: #1bc98e;
+}
+.progress-bar-striped{
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+.progress-bar-warning {
+  background-color: #f0ad4e;
+}
+.progress-bar-danger {
+  background-color: #d9534f;
+}
+#ration-stock .stacked-area {
+  height: 200px;
+}
+
+#ration-stock .switch {
+  font-weight: 300;
+  color: #8b91a0;
+  padding: 0.5rem 0;
+}
+
+#ration-stock .switchery {
+  float: right;
+}
+
+
+/* .form-check {
+  position: relative;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.form-check-toggle {
+  position: relative;
+  padding-left: 0;
+  line-height: 30px;
+}
+
+.form-check-toggle input {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.form-check-toggle input + span {
+  cursor: pointer;
+  user-select: none;
+  height: 30px;
+  margin-left: 70px;
+  display: block;
+  position: relative;
+}
+
+.form-check-toggle input + span:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 30px;
+  width: 50px;
+  background: #fff;
+  border: solid 1px #eff2f3;
+  transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.form-check-toggle input + span:after {
+  width: 28px;
+  height: 28px;
+  margin-top: 1px;
+  margin-left: 1px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  background: #fff;
+  transition: margin-left 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  font-weight: bold;
+  content: '';
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.form-check-toggle input:checked + span:after {
+  content: '';
+  margin-left: 21px;
+  box-shadow: none;
+}
+
+.form-check-toggle input:checked + span:before {
+  background-color: #86be4e;
+  border-color: #86be4e;
+  transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+} */
+/* Container for switch items */
+/* Position the switch container absolutely within its relative parent */
+/* Ensure the parent container is positioned relatively */
+div[style*="position: relative;"] {
+  position: relative;
+}
+
+/* Style for the switch container */
+.switch-container {
+  padding: 10px; /* Add some padding around the switches */
+  background: #fff; /* Optional: background color for visibility */
+  position: absolute;
+  bottom: 0; /* Position it at the bottom of the container */
+  left: 0;
+  width: 100%; /* Full width of the container */
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Optional: shadow for visual separation */
+}
+
+/* Style for individual switch items */
+.switch {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space between switch items */
+}
+
+/* Label for the switch */
+.switch-label {
+  font-size: 16px;
+  margin-right: 10px; /* Space between text and toggle switch */
+  flex: 1; /* Allow label to take available space */
+}
+
+/* Style for the custom toggle switch */
+.form-check-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Custom toggle switch styling */
+.form-check-toggle {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Allow label to take available space */
+  justify-content: flex-end; /* Align toggle switch to the right */
+}
+
+.form-check-input {
+  display: none; /* Hide the default checkbox */
+}
+
+.toggle-switch {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #eff2f3;
+  border-radius: 15px;
+  transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.toggle-switch:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.form-check-input:checked + .toggle-switch {
+  background-color: #1bc98e;
+  border-color: #1bc98e;
+}
+
+.form-check-input:checked + .toggle-switch:before {
+  transform: translateX(20px);
+}

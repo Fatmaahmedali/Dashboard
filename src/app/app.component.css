@@ -1,0 +1,32 @@
+
+
+.borderless-drawer {
+  width: 20%; /* Sidebar width */
+  max-width: 300px; /* Optional: Maximum width */
+  min-width: 300px; /* Optional: Minimum width */
+  height: 100vh; /* Full viewport height */
+  border-right: none; /* Remove border */
+  box-shadow: none; /* Remove box shadow */
+  position: fixed; /* Fix position */
+  top: 0;
+  left: 0;
+  background-color: #ffffff; /* Background color for the sidebar */
+  overflow: hidden; /* Prevent scrolling in the sidebar */
+}
+
+.example-container {
+  height: 100vh;
+}
+
+
+
+
+/* Adjust styles for mobile view */
+@media (max-width: 800px) {
+  .borderless-drawer {
+    width: 100%;
+    min-width: 0; /* Optional: Adjust min-width */
+  }
+}
+
+

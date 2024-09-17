@@ -1,0 +1,18 @@
+gridster {
+  background-color: #eee9e9;
+  width: 100%; /* Ensure Gridster container takes up full width */
+  padding: 0; /* Remove padding to ensure full-width layout */
+  height: 130%; /* This height might be too much and could affect layout */
+}
+
+gridster-item {
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 0.25em;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  display: flex; /* Make sure the item uses flexbox to align children */
+  flex-direction: column; /* Stack children vertically */
+}
+
+

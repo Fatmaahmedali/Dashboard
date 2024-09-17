@@ -1,0 +1,70 @@
+.carousel-container {
+  width: 40%;
+  padding-left: 15px;
+  position: relative; /* Ensure positioning context for carousel */
+}
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: #fff;
+  padding: 10px;
+}
+.carousel-control-prev-icon {
+  background-image: url('http://www.w3.org/2000/sv');}
+.carousel-caption h1 {
+  margin: 0;
+  font-size: 1.5em; /* Adjust font size as needed */
+}
+.carousel-caption span {
+  display: block;
+  margin: 10px 0; /* Adjust spacing as needed */
+}
+.carousel-caption p {
+  margin: 0;
+  font-size: 1em; /* Adjust font size as needed */
+}
+.scrollspy-example {
+  position: relative;
+  height: 375px;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.row{
+  position: relative;
+  border-radius: 0.25em;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  background-color: #fff;
+  margin: 1.25rem;
+  flex-grow: 5;
+  padding-top: 20px;
+}
+/* Remove borders from list-group items */
+.list-group-item {
+  border: none; /* Remove border */
+  border-radius: 0; /* Remove border-radius to ensure no rounded corners */
+}
+
+/* Optional: Adjust padding if needed */
+.list-group-item-action {
+  padding: 10px 15px; /* Adjust padding to your liking */
+}
+
+/* Remove the default background color on hover if needed */
+.list-group-item-action:hover {
+  background-color: #f8f9fa; /* Optional: Change hover background color */
+}
+
+/* Remove outline on focus if needed */
+.list-group-item:focus {
+  box-shadow: none; /* Remove the outline box-shadow */
+  background-color: #e9ecef; /* Optional: Change background color on focus */
+}
+
+

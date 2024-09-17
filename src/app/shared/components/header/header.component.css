@@ -1,0 +1,172 @@
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  width: 300px;
+}
+.dropdown-content {
+  display: flex;
+  align-items: center;
+}
+.dropdown-content img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.text-content {
+  flex: 1;
+}
+.text-content h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.text-content p {
+  margin: 5px 0;
+  color: #333;
+}
+.text-content span {
+  font-size: 0.8rem;
+  color: #999;
+}
+.badge {
+  background-color: red;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar {
+  background-color: #f8f9fa;
+  position: relative; /* This is good for positioning the dropdown */
+
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  background-color: #333; /* Color of the toggler icon */
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  padding: 0 10px;
+}
+.nav-item a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+}
+.nav-item a:hover {
+  background-color: #e9ecef;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1; /* Gray background for dropdown */
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  max-height: 300px; /* Maximum height of the dropdown before scrolling */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+  width: 200%; /* Width of the dropdown */
+  border-radius: 5px;
+}
+.dropdown-menu.show {
+  display: block; /* Show the dropdown when it's open */
+}
+.dropdown-content {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-flex;
+  display: flex;
+  opacity: 0.7;
+  margin: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.3rem;
+  background-color: #EFEFEF;
+  position: relative;/* Separator between each notification */
+  width: 200%;
+}
+.dropdown-content:last-child {
+  border-bottom: none; /* Remove bottom border from the last notification */
+}
+.text-content {
+  margin-left: 10px;
+}
+.text-content h1 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+.text-content p {
+  margin: 5px 0;
+  color: #555;
+}
+.text-content .since {
+  font-style: italic;
+  color: #888;
+}
+.dropdown-toggle {
+  cursor: pointer;
+} */
+.badge {
+  background-color: red;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content; /* Adjust based on your needs */
+}
+.search-wrapper i {
+  position: absolute;
+  left: 10px; /* Adjust as needed */
+  font-size: 1rem; /* Adjust as needed */
+  color: #aaa; /* Adjust as needed */
+}
+.search-wrapper input {
+  padding-left: 30px; /* Ensure enough space for the icon */
+  width: 200px; /* Initial width of the input */
+  transition: width 0.3s ease; /* Smooth transition for width change */
+}
+.search-wrapper input.expanded {
+  width: 220px; /* Width when focused, slightly larger */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-control{
+  border-radius: 0.25em;
+  border: none;
+  width: 70%;
+  padding-left: 1.9em;
+  background-color: #F3F3F3;
+  box-shadow: none;
+}
+
+/* Ensure dropdown menu has a higher z-index */
+.navbar-nav .dropdown-menu {
+  position: absolute; /* Positioning relative to the nearest positioned ancestor */
+  z-index: 1050; /* Ensure this is higher than other components */
+}
+.dropdown .dropdown-menu {
+  position: absolute; /* Positioning relative to the nearest positioned ancestor */
+  z-index: 1050; /* Ensure this is higher than other components */
+}
+.head{
+  display: none;
+}

@@ -1,0 +1,40 @@
+.quick-stats {
+  padding: 0.4rem;
+}
+#quick-info .quick-stats {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-bottom: 0.1rem solid #e5e9ec;
+  font-weight: 300;
+}
+#quick-info .quick-stats span {
+  font-weight: 300;
+  float: right;
+  color: #8b91a0;
+}
+
+/* .chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+} */
+:host {
+  display: block;
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+  height: auto; /* Adjust height based on content */
+}
+
+.central-text {
+  text-align: center;
+}
+
+.custom-text {
+  font-size: 14px;
+  color: #000;
+}
