@@ -1,15 +1,4 @@
 
-<!-- <button (click)="addWidget()">Add Widget</button>
-
-<gridster [options]="options">
-  <gridster-item *ngFor="let item of items; let i = index" [item]="item">
-    <app-widget [item]="item"></app-widget>
-    <app-charts [item]="item"></app-charts>
-    <app-radar [item]="item"></app-radar>
-    <button (click)="removeWidget(i)">Remove</button>
-  </gridster-item>
-</gridster> -->
-
 <gridster [options]="options">
   <gridster-item *ngFor="let item of items; let i = index" [item]="item">
     <app-pie [item]="item"></app-pie>

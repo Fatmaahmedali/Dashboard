@@ -9,8 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
-import { MatIconModule } from '@angular/material/icon'; // Import MatIconModule
-import { LayoutModule } from '@angular/cdk/layout'; // For BreakpointObserver
+import { MatIconModule } from '@angular/material/icon';
+import { LayoutModule } from '@angular/cdk/layout';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WidgetModule } from './widget/widget.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -19,7 +19,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   declarations: [
     AppComponent,
     DashboardComponent,
-    // Declare any other components here
   ],
   imports: [
     BrowserModule,

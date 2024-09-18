@@ -10,8 +10,6 @@
 #real-time .badge span, #real-time .label {
   color: #FFF;
 }
-
-
 .list-unstyled {
   padding: 0.6rem;
 }
@@ -94,94 +92,9 @@
 #ration-stock .switchery {
   float: right;
 }
-
-
-/* .form-check {
-  position: relative;
-  display: block;
-  margin-bottom: 0.75rem;
-}
-
-.form-check-toggle {
-  position: relative;
-  padding-left: 0;
-  line-height: 30px;
-}
-
-.form-check-toggle input {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 0%;
-  margin: 0;
-  cursor: pointer;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-
-.form-check-toggle input + span {
-  cursor: pointer;
-  user-select: none;
-  height: 30px;
-  margin-left: 70px;
-  display: block;
-  position: relative;
-}
-
-.form-check-toggle input + span:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 30px;
-  width: 50px;
-  background: #fff;
-  border: solid 1px #eff2f3;
-  transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
-  border-radius: 15px;
-}
-
-.form-check-toggle input + span:after {
-  width: 28px;
-  height: 28px;
-  margin-top: 1px;
-  margin-left: 1px;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  background: #fff;
-  transition: margin-left 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  text-align: center;
-  font-weight: bold;
-  content: '';
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.05);
-}
-
-.form-check-toggle input:checked + span:after {
-  content: '';
-  margin-left: 21px;
-  box-shadow: none;
-}
-
-.form-check-toggle input:checked + span:before {
-  background-color: #86be4e;
-  border-color: #86be4e;
-  transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
-} */
-/* Container for switch items */
-/* Position the switch container absolutely within its relative parent */
-/* Ensure the parent container is positioned relatively */
 div[style*="position: relative;"] {
   position: relative;
 }
-
-/* Style for the switch container */
 .switch-container {
   padding: 10px; /* Add some padding around the switches */
   background: #fff; /* Optional: background color for visibility */
@@ -191,41 +104,31 @@ div[style*="position: relative;"] {
   width: 100%; /* Full width of the container */
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Optional: shadow for visual separation */
 }
-
-/* Style for individual switch items */
 .switch {
   display: flex;
   align-items: center;
   margin-bottom: 10px; /* Space between switch items */
 }
-
-/* Label for the switch */
 .switch-label {
   font-size: 16px;
   margin-right: 10px; /* Space between text and toggle switch */
   flex: 1; /* Allow label to take available space */
 }
-
-/* Style for the custom toggle switch */
 .form-check-label {
   display: flex;
   align-items: center;
   cursor: pointer;
   position: relative;
 }
-
-/* Custom toggle switch styling */
 .form-check-toggle {
   display: flex;
   align-items: center;
   flex: 1; /* Allow label to take available space */
   justify-content: flex-end; /* Align toggle switch to the right */
 }
-
 .form-check-input {
   display: none; /* Hide the default checkbox */
 }
-
 .toggle-switch {
   cursor: pointer;
   display: inline-block;

@@ -1,32 +1,35 @@
-
-
 .borderless-drawer {
-  width: 20%; /* Sidebar width */
-  max-width: 300px; /* Optional: Maximum width */
-  min-width: 300px; /* Optional: Minimum width */
-  height: 100vh; /* Full viewport height */
-  border-right: none; /* Remove border */
-  box-shadow: none; /* Remove box shadow */
-  position: fixed; /* Fix position */
+  width: 20%;
+  max-width: 300px;
+  min-width: 300px;
+  height: 100vh;
+  border-right: none;
+  box-shadow: none;
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffffff; /* Background color for the sidebar */
-  overflow: hidden; /* Prevent scrolling in the sidebar */
-}
-
+  background-color: #ffffff;
+  overflow: hidden;}
 .example-container {
   height: 100vh;
 }
-
-
-
-
-/* Adjust styles for mobile view */
 @media (max-width: 800px) {
   .borderless-drawer {
     width: 100%;
-    min-width: 0; /* Optional: Adjust min-width */
+    min-width: 0; }
+}
+.menu-button {
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+@media (max-width: 800px) {
+  .menu-button {
+    background-color: black;
+  }
+  .menu-button mat-icon {
+    color: white;
   }
 }
+
 
 

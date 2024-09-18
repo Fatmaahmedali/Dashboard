@@ -170,3 +170,45 @@
 .head{
   display: none;
 }
+.search-wrapper {
+  transition: all 0.3s ease;
+}
+
+.mt-2 {
+  margin-top: 0.5rem; /* Space between header and search input */
+}
+.dropdown-item {
+  display: flex; /* Make the dropdown item a flex container */
+  align-items: center; /* Align items vertically centered */
+  padding: 10px 15px; /* Padding for dropdown items */
+}
+
+.dropdown-item img {
+  width: 40px; /* Image size */
+  height: 40px; /* Image size */
+  border-radius: 50%; /* Circular image */
+  margin-right: 10px; /* Space between image and text */
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically within the flex column */
+}
+
+.notification-content strong {
+  font-weight: bold; /* Make name bold */
+}
+
+.notification-content p {
+  margin: 0; /* Remove default margin */
+  color: #333; /* Message color */
+}
+
+.notification-content em {
+  font-style: italic; /* Italicize timestamp */
+  color: #888; /* Timestamp color */
+}
+.hover-bg-light:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}

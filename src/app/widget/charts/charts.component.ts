@@ -2,10 +2,8 @@ import { Component, Input, OnChanges, SimpleChanges, AfterViewInit, ElementRef, 
 import * as Highcharts from 'highcharts';
 import HC_more from 'highcharts/highcharts-more';  // Import if using additional Highcharts features
 import HC_exporting from 'highcharts/modules/exporting';
-
 HC_more(Highcharts);  // Initialize the additional modules if needed
 HC_exporting(Highcharts);
-
 @Component({
   selector: 'app-charts',
   templateUrl: './charts.component.html',
@@ -26,17 +24,10 @@ export class ChartsComponent implements OnChanges {
           const chart = this as Highcharts.Chart;
           const renderer = chart.renderer;
           chart.renderer.box.querySelectorAll('.central-text').forEach(element => element.remove());
-
-          // Get chart dimensions and responsive state
           const isResponsive = chart.renderer.box.clientWidth <= 500;
-
-          // Calculate the center position for the text
           const centerX = chart.plotWidth / 2;
           const centerY = chart.plotHeight / 2;
-
-          // Conditional text positioning based on responsive state
-          if (isResponsive) {
-            // Position texts in a column layout for small screens
+                    if (isResponsive) {
             renderer.text('<div style="font-size: 18px; text-align: center;">42%<br>recurring</div>',
               centerX, centerY * 0.8)
               .attr({
@@ -49,7 +40,6 @@ export class ChartsComponent implements OnChanges {
                 textAlign: 'center'
               })
               .add();
-
             renderer.text('<div style="font-size: 18px; text-align: center;">87%<br>Aware</div>',
               centerX, centerY * 1.5)
               .attr({
@@ -63,7 +53,6 @@ export class ChartsComponent implements OnChanges {
               })
               .add();
           }else {
-            // Position texts in a row layout for larger screens
             renderer.text('<div style="font-size: 24px; text-align: center;">42%<br>recurring</div>',
               centerX * 0.6, centerY)
               .attr({
@@ -76,7 +65,6 @@ export class ChartsComponent implements OnChanges {
                 textAlign: 'center'
               })
               .add();
-
             renderer.text('<div style="font-size: 24px; text-align: center;">87%<br>Aware</div>',
               centerX * 1.4, centerY)
               .attr({
@@ -91,8 +79,6 @@ export class ChartsComponent implements OnChanges {
               .add();
           }
         }
-
-
       }
     },
     title: {
@@ -187,9 +173,6 @@ export class ChartsComponent implements OnChanges {
       }]
     }
   };
-
-
-
   data: Array<{ name: string, y: number, format?: 'percent' | 'duration' }> = [
     { name: 'Today:', y: 78 },
     { name: 'This month:', y: 459 },
@@ -198,13 +181,7 @@ export class ChartsComponent implements OnChanges {
     { name: 'Session duration:', y: 101, format: 'duration' },
     { name: 'New session:', y: 63.86, format: 'percent' }
   ];
-
-
-
   chart: any;
-
-  // Helper method to format duration in minutes and seconds
-
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['item'] && this.item) {

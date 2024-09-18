@@ -24,6 +24,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  showSearch: boolean = false;
+
+  toggleSearch() {
+    this.showSearch = !this.showSearch;
+  }
+
   expand() {
     const input = document.querySelector('.search-wrapper input') as HTMLInputElement;
     input.classList.add('expanded');
