@@ -159,7 +159,7 @@ export class ChartsComponent implements OnChanges {
               name: 'Pie Chart 1',
               center: ['50%', '30%'], // Position for smaller screens
               size: '30%',
-              innerSize: '80%'
+              innerSize: '70%'
             },
             {
               type: 'pie',
