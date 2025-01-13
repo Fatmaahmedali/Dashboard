@@ -33,11 +33,36 @@
   justify-content: space-between;
   gap: 20px;
 }
-
 /* Apply changes when the screen width is less than or equal to 400px */
 @media (max-width: 400px) {
   .chart-container {
     flex-direction: column; /* Stack the charts vertically on small screens */
     align-items: center;
+    padding: 10px;
   }
 }
+
+/* Apply changes when the screen width is less than or equal to 768px (Tablets) */
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column; /* Stack the charts vertically on smaller screens */
+    align-items: center;
+  }
+
+  .highcharts-container {
+    width: 100% !important; /* Ensure chart width adjusts */
+  }
+}
+
+/* Apply changes when the screen width is greater than 768px (Desktops) */
+@media (min-width: 768px) {
+  .chart-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .highcharts-container {
+    width: 50%; /* Half the width for larger screens */
+  }
+}
+

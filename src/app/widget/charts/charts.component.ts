@@ -139,39 +139,105 @@ export class ChartsComponent implements OnChanges {
       valueSuffix: '%'
     },
     responsive: {
-      rules: [{
-        condition: {
-          maxWidth: 400 // Breakpoint for responsiveness
-        },
-        chartOptions: {
-          plotOptions: {
-            pie: {
-              size: '40%',
-              innerSize: '20%',
-              dataLabels: {
-                enabled: true
-              }
-            }
+      rules: [
+        {
+          condition: {
+            maxWidth: 400, // For mobile screens
           },
-          series: [
-            {
-              type: 'pie',
-              name: 'Pie Chart 1',
-              center: ['50%', '30%'], // Position for smaller screens
-              size: '30%',
-              innerSize: '70%'
+          chartOptions: {
+            plotOptions: {
+              pie: {
+                size: '40%',
+                innerSize: '20%',
+                dataLabels: {
+                  enabled: true,
+                },
+              },
             },
-            {
-              type: 'pie',
-              name: 'Pie Chart 2',
-              center: ['50%', '70%'], // Position for smaller screens
-              size: '30%',
-              innerSize: '80%'
-            }
-          ]
-        }
-      }]
-    }
+            series: [
+              {
+                type: 'pie',
+                name: 'Pie Chart 1',
+                center: ['50%', '30%'], // Adjust positioning for smaller screens
+                size: '30%',
+                innerSize: '70%',
+              },
+              {
+                type: 'pie',
+                name: 'Pie Chart 2',
+                center: ['50%', '70%'], // Adjust positioning for smaller screens
+                size: '30%',
+                innerSize: '80%',
+              },
+            ],
+          },
+        },
+        {
+          condition: {
+            maxWidth: 768, // For tablet screens
+          },
+          chartOptions: {
+            plotOptions: {
+              pie: {
+                size: '50%',
+                innerSize: '25%',
+                dataLabels: {
+                  enabled: true,
+                },
+              },
+            },
+            series: [
+              {
+                type: 'pie',
+                name: 'Pie Chart 1',
+                center: ['50%', '40%'], // Position adjusted for tablets
+                size: '40%',
+                innerSize: '60%',
+              },
+              {
+                type: 'pie',
+                name: 'Pie Chart 2',
+                center: ['50%', '60%'], // Position adjusted for tablets
+                size: '40%',
+                innerSize: '70%',
+              },
+            ],
+          },
+        },
+        {
+          condition: {
+            minWidth: 769, // For desktop screens
+          },
+          chartOptions: {
+            plotOptions: {
+              pie: {
+                size: '60%',
+                innerSize: '30%',
+                dataLabels: {
+                  enabled: true,
+                },
+              },
+            },
+            series: [
+              {
+                type: 'pie',
+                name: 'Pie Chart 1',
+                center: ['30%', '40%'],
+                size: '40%',
+                innerSize: '60%',
+              },
+              {
+                type: 'pie',
+                name: 'Pie Chart 2',
+                center: ['70%', '40%'],
+                size: '40%',
+                innerSize: '60%',
+              },
+            ],
+          },
+        },
+      ],
+    },
   };
   data: Array<{ name: string, y: number, format?: 'percent' | 'duration' }> = [
     { name: 'Today:', y: 78 },
